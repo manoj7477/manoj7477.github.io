@@ -462,7 +462,8 @@ a {
 }
 
 .resume-btn:hover {
-    background: #e60047;
+    background: #2C5F2D;
+    color: #fff;
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255,110, 64, 0.5);
 }
