@@ -1099,6 +1099,7 @@ a {
     }
 
     .news-card .learn-more-btn:hover {
+        color: #fff;
         background: #2C5F2D;
     }
 }
@@ -1207,6 +1208,7 @@ a {
     }
 
     .news-card .learn-more-btn:hover {
+        color: #fff;
         background: #2C5F2D;
     }
 }
