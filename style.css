@@ -427,7 +427,7 @@ a {
 }
 
 .learn-more-btn:hover {
-    background: #e60047;
+    background: #2C5F2D;
     transform: scale(1.05);
 }
 
@@ -465,7 +465,7 @@ a {
     background: #2C5F2D;
     color: #fff;
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255,110, 64, 0.5);
+    box-shadow: 0 0 15px rgba(44,95,45, 0.5);
 }
 
 /* Contact Section */
@@ -1093,12 +1093,12 @@ a {
     .news-card .learn-more-btn {
         font-size: 14px;
         padding: 8px 16px;
-        background: #ff004f;
+        background: #2C5F2D;
         color: #fff;
     }
 
     .news-card .learn-more-btn:hover {
-        background: #e60047;
+        background: #2C5F2D;
     }
 }
 
@@ -1201,11 +1201,11 @@ a {
     .news-card .learn-more-btn {
         font-size: 12px;
         padding: 6px 12px;
-        background: #ff004f;
+        background: #2C5F2D;
         color: #fff;
     }
 
     .news-card .learn-more-btn:hover {
-        background: #e60047;
+        background: #2C5F2D;
     }
 }
