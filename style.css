@@ -428,6 +428,7 @@ a {
 
 .learn-more-btn:hover {
     background: #2C5F2D;
+    color: #fff;
     transform: scale(1.05);
 }
 
