@@ -66,6 +66,7 @@ a {
 }
 
 .logo:hover {
+    text-decoration: none;
     color: #fff;
     transform: scale(1.1);
 }
@@ -151,6 +152,7 @@ a {
 }
 
 .nav-menu li a:hover {
+    text-decoration: none;
     color: #2C5F2D;
 }
 
@@ -387,6 +389,7 @@ a {
 }
 
 .research-card:hover {
+    text-decoration: none;
     transform: translateY(-10px);
     box-shadow: 0 0 25px rgba(255,110, 64, 0.5);
 }
@@ -430,6 +433,7 @@ a {
 }
 
 .learn-more-btn:hover {
+    text-decoration: none;
     background: #2C5F2D;
     color: #fff;
     transform: scale(1.05);
@@ -466,6 +470,7 @@ a {
 }
 
 .resume-btn:hover {
+    text-decoration: none;
     background: #2C5F2D;
     color: #fff;
     transform: scale(1.05);
@@ -514,6 +519,7 @@ a {
 }
 
 .social-icons a:hover {
+    text-decoration: none;
     color: #2C5F2D;
     transform: scale(1.2);
 }
@@ -585,6 +591,7 @@ a {
 }
 
 .award-card:hover {
+    text-decoration: none;
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(255,110, 64, 0.4);
 }
@@ -653,6 +660,7 @@ a {
 }
 
 .news-card:hover {
+    text-decoration: none;
     box-shadow: 0 0 25px rgba(255,110, 64, 0.4);
 }
 
@@ -692,6 +700,7 @@ a {
 }
 
 .learn-more-btn:hover {
+    text-decoration: none;
     background: #2C5F2D;
     transform: scale(1.05);
 }
@@ -779,6 +788,7 @@ a {
 
 /* Hover effect for the card */
 .flip-card:hover {
+    text-decoration: none;
     box-shadow: 0 0 15px rgba(255,110, 64, 0.5);
 }
 
