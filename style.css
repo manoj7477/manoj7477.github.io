@@ -74,8 +74,9 @@ a {
 .logo span {
     color: #2C5F2D;
 }
-.logo span:hover{
-    color:#2c5f2d;
+
+.logo span:hover {
+    color: #2C5F2D;
 }
 
 .header-text span {
@@ -233,6 +234,48 @@ a {
     margin: 0 auto; /* Center the quote */
 }
 
+/* Logo Slider Styles */
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10rem; /* Increased to separate from contact section */
+    height: 120px; /* Fixed height to prevent overlap */
+}
+
+.logo-slide-track {
+    display: flex;
+    width: calc(150px * 8); /* Width based on number of slides (4 logos + 4 duplicates) */
+    animation: slide 20s linear infinite;
+}
+
+.logo-slide {
+    flex: 0 0 150px; /* Fixed width for each logo */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo-slide img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(255,110,64,0.5));
+}
+
+/* Animation for right-to-left slide */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-150px * 4)); /* Move by the width of original logos */
+    }
+}
+
+/* About Section Styles */
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -486,6 +529,7 @@ a {
     flex-direction: column;
     width: 100%;
     text-align: center;
+    margin-top: 80px; /* Increased to move section further down */
 }
 
 #contact .container {
@@ -493,6 +537,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 .social-icons {
@@ -699,9 +744,10 @@ a {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.learn-more-btn:hover {
+.news-card .learn-more-btn:hover {
     text-decoration: none;
     background: #2C5F2D;
+    color: #fff;
     transform: scale(1.05);
 }
 
@@ -810,6 +856,7 @@ a {
     .header-text {
         font-size: 35px;
     }
+
     .header-text .resume-btn {
         margin-left: 5rem;
     }
@@ -820,6 +867,33 @@ a {
 
     .nav-menu li a {
         font-size: 20px;
+    }
+
+    .logo-slide {
+        flex: 0 0 180px; /* Larger logos on bigger screens */
+        height: 120px;
+    }
+
+    .logo-slide-track {
+        width: calc(180px * 8);
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-180px * 4));
+        }
+    }
+
+    #contact {
+        margin-top: 100px; /* Larger margin for bigger screens */
+    }
+
+    .logo-slider {
+        margin-bottom: 60px; /* Increased bottom margin */
+        height: 140px;
     }
 }
 
@@ -906,6 +980,33 @@ a {
 
     .news-card img {
         max-width: 500px;
+    }
+
+    .logo-slide {
+        flex: 0 0 120px; /* Smaller logos on medium screens */
+        height: 80px;
+    }
+
+    .logo-slide-track {
+        width: calc(120px * 8);
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-120px * 4));
+        }
+    }
+
+    #contact {
+        margin-top: 70px; /* Adjusted for medium screens */
+    }
+
+    .logo-slider {
+        margin-bottom: 40px; /* Adjusted bottom margin */
+        height: 100px;
     }
 }
 
@@ -1115,6 +1216,34 @@ a {
         color: #fff;
         background: #2C5F2D;
     }
+
+    .logo-slide {
+        flex: 0 0 100px; /* Smaller logos on mobile */
+        height: 60px;
+    }
+
+    .logo-slide-track {
+        width: calc(100px * 8);
+        animation: slide 15s linear infinite; /* Faster animation on mobile */
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-100px * 4));
+        }
+    }
+
+    #contact {
+        margin-top: 60px; /* Adjusted for mobile */
+    }
+
+    .logo-slider {
+        margin-bottom: 30px; /* Adjusted bottom margin */
+        height: 80px;
+    }
 }
 
 /* Additional media query for very small screens (e.g., 480px and below) */
@@ -1223,5 +1352,33 @@ a {
     .news-card .learn-more-btn:hover {
         color: #fff;
         background: #2C5F2D;
+    }
+
+    .logo-slide {
+        flex: 0 0 80px; /* Even smaller logos on very small screens */
+        height: 50px;
+    }
+
+    .logo-slide-track {
+        width: calc(80px * 8);
+        animation: slide 12s linear infinite; /* Faster animation on small screens */
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-80px * 4));
+        }
+    }
+
+    #contact {
+        margin-top: 50px; /* Smaller margin for very small screens */
+    }
+
+    .logo-slider {
+        margin-bottom: 20px; /* Minimal bottom margin */
+        height: 60px;
     }
 }
