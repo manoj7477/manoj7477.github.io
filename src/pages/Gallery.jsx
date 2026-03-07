@@ -2,22 +2,24 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, ZoomIn, Images } from 'lucide-react';
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const galleryItems = [
-    { id: 1, text: 'Manoj with his parents', img: '/Gallery-1.jpeg', category: 'Family' },
-    { id: 2, text: 'Manoj, along with his guide and inspiration Dr. Sudip Das, is an important and supportive presence in his life', img: '/Gallery-2.jpeg', category: 'Mentors' },
-    { id: 3, text: "Manoj with his master's time professors Dr. Naresh Chandra Bal FRSB & Dr. Gargi Dey", img: '/3rd_gallery.jpg', category: 'Academic' },
-    { id: 4, text: 'Manoj with Prof G K Rath, MD founder of (NCI-AIIMS) National Cancer Institute', img: '/Gallery-4.jpeg', category: 'Professional' },
-    { id: 5, text: 'Manoj with Prof. G. P. Talwar (FAMS, FASc, FNASc, FNA, FRCOG), Former Director, NII', img: '/Gallery-5.jpeg', category: 'Professional' },
-    { id: 6, text: "Manoj with his master's time professors Dr. Amrita Mishra & Dr. Vishakha Raina", img: '/Gallery-6.jpeg', category: 'Academic' },
-    { id: 7, text: 'Manoj with Dr. Professor Rupa Rajan, MD top neurologist from AIIMS Delhi', img: '/Gallery-7.jpeg', category: 'Professional' },
-    { id: 8, text: "Manoj with Dr. Bimal Prasad Jit, a chance Scientist Master's thesis Co-guide", img: '/Gallery-8.jpeg', category: 'Mentors' },
-    { id: 9, text: 'Happy World Students Day - Certificate awarded by ICMR scientist Mahesh Chandra Sahu', img: '/Gallery-9.jpeg', category: 'Awards' },
-    { id: 10, text: 'Workshop on Molecular and Genomic Techniques in Cancer Studies (MAGTICS 2023) at NIT-ROURKELA', img: '/Gallery-10.jpeg', category: 'Events' },
-    { id: 11, text: 'Summer in IISER KOLKATA under guidance of Dr. Jayasri Das Sarma', img: '/Gallery-11.jpeg', category: 'Academic' },
-    { id: 12, text: 'With Prof Dr. Achal Kumar Srivastava, renowned Indian neurologist and researcher at AIIMS', img: '/Gallery-12.jpeg', category: 'Professional' },
-    { id: 13, text: 'Manoj with Sirsendu Bikash Maiti Sir, a visionary businessman and first scientific guide', img: '/Gallery-13.jpeg', category: 'Mentors' },
-    { id: 14, text: 'Manoj with his school teachers and friends', img: '/Gallery-14.jpeg', category: 'Family' },
-    { id: 15, text: 'EMBO Young scientists forum 2025 as a volunteer', img: '/new.jpg', category: 'Events' },
+    { id: 1, text: 'Manoj with his parents', img: asset('Gallery-1.jpeg'), category: 'Family' },
+    { id: 2, text: 'Manoj, along with his guide and inspiration Dr. Sudip Das, is an important and supportive presence in his life', img: asset('Gallery-2.jpeg'), category: 'Mentors' },
+    { id: 3, text: "Manoj with his master's time professors Dr. Naresh Chandra Bal FRSB & Dr. Gargi Dey", img: asset('3rd_gallery.jpg'), category: 'Academic' },
+    { id: 4, text: 'Manoj with Prof G K Rath, MD founder of (NCI-AIIMS) National Cancer Institute', img: asset('Gallery-4.jpeg'), category: 'Professional' },
+    { id: 5, text: 'Manoj with Prof. G. P. Talwar (FAMS, FASc, FNASc, FNA, FRCOG), Former Director, NII', img: asset('Gallery-5.jpeg'), category: 'Professional' },
+    { id: 6, text: "Manoj with his master's time professors Dr. Amrita Mishra & Dr. Vishakha Raina", img: asset('Gallery-6.jpeg'), category: 'Academic' },
+    { id: 7, text: 'Manoj with Dr. Professor Rupa Rajan, MD top neurologist from AIIMS Delhi', img: asset('Gallery-7.jpeg'), category: 'Professional' },
+    { id: 8, text: "Manoj with Dr. Bimal Prasad Jit, a chance Scientist Master's thesis Co-guide", img: asset('Gallery-8.jpeg'), category: 'Mentors' },
+    { id: 9, text: 'Happy World Students Day - Certificate awarded by ICMR scientist Mahesh Chandra Sahu', img: asset('Gallery-9.jpeg'), category: 'Awards' },
+    { id: 10, text: 'Workshop on Molecular and Genomic Techniques in Cancer Studies (MAGTICS 2023) at NIT-ROURKELA', img: asset('Gallery-10.jpeg'), category: 'Events' },
+    { id: 11, text: 'Summer in IISER KOLKATA under guidance of Dr. Jayasri Das Sarma', img: asset('Gallery-11.jpeg'), category: 'Academic' },
+    { id: 12, text: 'With Prof Dr. Achal Kumar Srivastava, renowned Indian neurologist and researcher at AIIMS', img: asset('Gallery-12.jpeg'), category: 'Professional' },
+    { id: 13, text: 'Manoj with Sirsendu Bikash Maiti Sir, a visionary businessman and first scientific guide', img: asset('Gallery-13.jpeg'), category: 'Mentors' },
+    { id: 14, text: 'Manoj with his school teachers and friends', img: asset('Gallery-14.jpeg'), category: 'Family' },
+    { id: 15, text: 'EMBO Young scientists forum 2025 as a volunteer', img: asset('new.jpg'), category: 'Events' },
 ];
 
 const categories = ['All', 'Professional', 'Academic', 'Mentors', 'Family', 'Events', 'Awards'];

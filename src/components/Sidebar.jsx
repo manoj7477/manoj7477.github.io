@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { Download, Linkedin, Mail, BookOpen, MapPin, Home, User, FlaskConical, Award, Newspaper, Images, Menu, X, ExternalLink } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const navItems = [
     { path: '/', label: 'Overview', icon: Home },
     { path: '/about', label: 'About', icon: User },
@@ -52,7 +54,7 @@ const Sidebar = () => {
                 `}</style>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                     <img
-                        src="/main_photo.jpg"
+                        src={asset('main_photo.jpg')}
                         alt="Manoj Kumar Jana"
                         style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover' }}
                     />
@@ -121,7 +123,7 @@ const Sidebar = () => {
                             boxShadow: '0 4px 20px rgba(59, 130, 246, 0.2)',
                         }}>
                             <img
-                                src="/main_photo.jpg"
+                                src={asset('main_photo.jpg')}
                                 alt="Manoj Kumar Jana"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
@@ -205,7 +207,7 @@ const Sidebar = () => {
 
                     {/* Download CV Button */}
                     <a
-                        href="/resume.pdf"
+                        href={asset('resume.pdf')}
                         download
                         className="btn btn-primary"
                         style={{

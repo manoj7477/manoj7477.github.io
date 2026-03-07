@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GraduationCap, Briefcase, Wrench, MapPin, Calendar, Building } from 'lucide-react';
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const tabs = [
     { id: 'overview', label: 'Overview', icon: GraduationCap },
     { id: 'skills', label: 'Skills', icon: Wrench },
@@ -141,7 +143,7 @@ const About = () => {
                         <div style={{ display: 'flex', gap: '0', alignItems: 'center', flexWrap: 'wrap' }}>
                             <div style={{ flex: '0 0 auto' }}>
                                 <img
-                                    src="/user.jpeg"
+                                    src={asset('user.jpeg')}
                                     alt="Manoj Kumar Jana"
                                     style={{
                                         width: '300px',

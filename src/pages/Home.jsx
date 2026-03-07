@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Microscope, Award, FileText, Users, BookOpen, FlaskConical, TrendingUp, ExternalLink, Heart, Cpu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const stats = [
     { number: '3+', label: 'Publications', icon: BookOpen },
     { number: '7+', label: 'Research Positions', icon: FlaskConical },
@@ -333,7 +335,7 @@ const Home = () => {
                                     }}
                                 >
                                     <img
-                                        src={`/institution${n}.png`}
+                                        src={asset(`institution${n}.png`)}
                                         alt="Institution"
                                         style={{
                                             maxHeight: '50px',

@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Award, Trophy, Star, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const awards = [
     {
         id: 1,
         title: 'Best Volunteer Award - World Cancer Congress 2024',
-        img: '/award-1.jpg',
+        img: asset('award-1.jpg'),
         description: 'Received the Best Volunteer Award at the World Cancer Congress 2024 for outstanding contributions to cancer research and community outreach.',
         year: '2024',
         category: 'Excellence',
@@ -14,7 +16,7 @@ const awards = [
     {
         id: 2,
         title: 'ASM Fellow Recognition',
-        img: '/award-6.jpeg',
+        img: asset('award-6.jpeg'),
         description: 'Honored as a Fellow of the American Society of Microbiology for dedication and leadership in advancing scientific knowledge.',
         year: '2024',
         category: 'Fellowship',
@@ -22,7 +24,7 @@ const awards = [
     {
         id: 3,
         title: 'Bharat Gaurav Puraskar',
-        img: '/award-3.jpeg',
+        img: asset('award-3.jpeg'),
         description: 'Master\'s work selected for the prestigious "Bharat Gaurav Puraskar," awarded by the KIK Foundation for significant contributions to research.',
         year: '2024',
         category: 'National Award',
@@ -30,7 +32,7 @@ const awards = [
     {
         id: 4,
         title: 'Research Excellence Award',
-        img: '/award-5.jpeg',
+        img: asset('award-5.jpeg'),
         description: 'Recognized for innovative research work in the field of immunology and cancer studies.',
         year: '2023',
         category: 'Research',
@@ -38,7 +40,7 @@ const awards = [
     {
         id: 5,
         title: 'Academic Achievement Award',
-        img: '/award-4.jpeg',
+        img: asset('award-4.jpeg'),
         description: 'In recognition of outstanding academic performance and dedication to scientific pursuits.',
         year: '2023',
         category: 'Academic',
@@ -46,7 +48,7 @@ const awards = [
     {
         id: 6,
         title: 'Best Poster Presentation',
-        img: '/award-2.jpeg',
+        img: asset('award-2.jpeg'),
         description: 'Best poster presentation at the national conference for work on biofertilizer research.',
         year: '2022',
         category: 'Presentation',

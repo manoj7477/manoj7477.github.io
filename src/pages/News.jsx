@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Calendar, Newspaper, TrendingUp, ArrowRight } from 'lucide-react';
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const newsItems = [
     {
         id: 1,
         title: 'Delhi-AIIMS Advances Breast and Ovarian Cancer Detection Using AI',
-        img: '/news-1.jpeg',
+        img: asset('news-1.jpeg'),
         link: 'https://www.drugtodayonline.com/medical-news/news-topic/17808-delhi-aiims-advances-breast-and-ovarian-cancer-detection-using-ai',
         description: 'AIIMS Delhi has made significant strides in cancer detection technology, leveraging Artificial Intelligence to improve early diagnosis rates for breast and ovarian cancers. This breakthrough research aims to revolutionize cancer screening and treatment outcomes.',
         date: '2024',
@@ -16,7 +18,7 @@ const newsItems = [
     {
         id: 2,
         title: 'AIIMS Unveils Indigenously Developed Technology for Early Detection of Cancer',
-        img: '/news-2.jpg',
+        img: asset('news-2.jpg'),
         link: 'https://www.thehindu.com/sci-tech/health/aiims-unveils-indigenously-developed-technology-for-early-detection-of-cancer/article67821512.ece',
         description: 'A breakthrough in medical technology as AIIMS unveils a new, indigenously developed system designed to detect cancer at its earliest stages, promising better patient outcomes and more accessible healthcare solutions.',
         date: '2024',
