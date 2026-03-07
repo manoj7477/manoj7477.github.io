@@ -217,23 +217,49 @@ const Sidebar = () => {
                     </a>
 
                     {/* Copyright */}
-                    <p style={{
-                        fontSize: '0.75rem',
-                        color: 'var(--color-text-muted)',
+                    <div style={{
                         textAlign: 'center',
-                        margin: 0,
+                        marginTop: '0.5rem',
                     }}>
-                        © {new Date().getFullYear()} Manoj Kumar Jana
-                        <br />
-                        <a
-                            href="https://www.mindrona.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: 'var(--color-accent)' }}
-                        >
-                            Built by Mindrona
-                        </a>
-                    </p>
+                        <p style={{
+                            fontSize: '0.75rem',
+                            color: 'var(--color-text-muted)',
+                            margin: '0 0 0.35rem 0',
+                        }}>
+                            © {new Date().getFullYear()} Manoj Kumar Jana
+                        </p>
+                        <p style={{
+                            fontSize: '0.75rem',
+                            color: 'var(--color-text-muted)',
+                            margin: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: '0.3rem',
+                        }}>
+                            Built by{' '}
+                            <a
+                                href="https://www.mindrona.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
+                                    WebkitBackgroundClip: 'text',
+                                    WebkitTextFillColor: 'transparent',
+                                    backgroundClip: 'text',
+                                    fontWeight: '700',
+                                    fontSize: '0.8rem',
+                                    letterSpacing: '0.04em',
+                                    textDecoration: 'none',
+                                    transition: 'opacity 0.2s ease',
+                                }}
+                                onMouseOver={e => e.currentTarget.style.opacity = '0.75'}
+                                onMouseOut={e => e.currentTarget.style.opacity = '1'}
+                            >
+                                Mindrona
+                            </a>
+                        </p>
+                    </div>
                 </motion.div>
             </motion.aside>
         </>
