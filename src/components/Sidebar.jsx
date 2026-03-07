@@ -54,7 +54,7 @@ const Sidebar = () => {
                 `}</style>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                     <img
-                        src={asset('main_photo.jpg')}
+                        src={asset('image.jpeg')}
                         alt="Manoj Kumar Jana"
                         style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover' }}
                     />
@@ -123,7 +123,7 @@ const Sidebar = () => {
                             boxShadow: '0 4px 20px rgba(59, 130, 246, 0.2)',
                         }}>
                             <img
-                                src={asset('main_photo.jpg')}
+                                src={asset('image.jpeg')}
                                 alt="Manoj Kumar Jana"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
