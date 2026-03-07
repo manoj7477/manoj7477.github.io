@@ -225,9 +225,14 @@ const Sidebar = () => {
                     }}>
                         © {new Date().getFullYear()} Manoj Kumar Jana
                         <br />
-                        <span style={{ color: 'var(--color-accent)' }}>
+                        <a
+                            href="https://www.mindrona.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ color: 'var(--color-accent)' }}
+                        >
                             Built by Mindrona
-                        </span>
+                        </a>
                     </p>
                 </motion.div>
             </motion.aside>
