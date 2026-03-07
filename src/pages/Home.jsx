@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Microscope, Award, FileText, Users, BookOpen, FlaskConical, TrendingUp } from 'lucide-react';
+import { ArrowRight, Microscope, Award, FileText, Users, BookOpen, FlaskConical, TrendingUp, ExternalLink, Heart, Cpu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const stats = [
@@ -65,7 +65,7 @@ const Home = () => {
                         transition={{ duration: 0.5 }}
                     >
                         <span className="badge badge-primary" style={{ marginBottom: '1rem' }}>
-                            Junior Researcher @ AIIMS Delhi
+                            PhD Researcher @ Rīga Stradiņš University
                         </span>
                     </motion.div>
 
@@ -132,17 +132,109 @@ const Home = () => {
                     }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
                             <TrendingUp size={24} />
-                            <h3 style={{ fontSize: '1.25rem', margin: 0, color: 'white' }}>Current Research Focus</h3>
+                            <h3 style={{ fontSize: '1.25rem', margin: 0, color: 'white' }}>Current Focus</h3>
                         </div>
-                        <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1rem', fontSize: '1rem' }}>
-                            Investigating "A Population-based Prospective Cohort Study to Unravel the Causes of
-                            Stroke and Cognitive Decline" at AIIMS Delhi, working with 7900+ patient blood samples
-                            to understand immune cell distribution patterns.
+                        <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem', fontSize: '1rem' }}>
+                            I am a researcher dedicated to decoding viral reactivation through systems biology and 3D organoid models. My work aims to bridge the gap between persistent infections and chronic illness by developing innovative therapeutic strategies.
                         </p>
+                        <h4 style={{ fontSize: '1rem', margin: '0 0 0.5rem 0', color: 'white', fontWeight: 600 }}>Background & Expertise</h4>
                         <p style={{ color: 'rgba(255,255,255,0.8)', margin: 0, fontSize: '0.95rem' }}>
-                            Additionally contributing to the Macrophage Lung Microbiota project at the University of Bern,
-                            Switzerland, developing physiologically relevant human lung macrophage models.
+                            My foundation lies in high-volume clinical research and cellular modeling. I previously analyzed immune patterns in a 7,900+ patient cohort at AIIMS Delhi and developed human lung macrophage models at the University of Bern to study microbiota interactions.
                         </p>
+                    </div>
+                </motion.div>
+
+                {/* Ventures & Initiatives */}
+                <motion.div variants={itemVariants} style={{ marginBottom: '3rem' }}>
+                    <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Ventures & Initiatives</h2>
+                    <div className="grid-2" style={{ gap: '1.5rem' }}>
+                        <motion.a
+                            href="https://justonestepfoundation.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="card card-interactive"
+                            style={{ textDecoration: 'none', display: 'block' }}
+                            whileHover={{ scale: 1.02, y: -5 }}
+                            whileTap={{ scale: 0.98 }}
+                        >
+                            <div style={{
+                                width: '56px',
+                                height: '56px',
+                                borderRadius: 'var(--radius-md)',
+                                background: 'linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                marginBottom: '1rem',
+                            }}>
+                                <Heart size={28} color="white" />
+                            </div>
+                            <h3 style={{
+                                fontSize: '1.15rem',
+                                marginBottom: '0.5rem',
+                                fontFamily: 'var(--font-sans)',
+                                fontWeight: 600,
+                            }}>
+                                Just One Step Foundation
+                            </h3>
+                            <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
+                                A non-profit organization dedicated to healthcare awareness, education, and community development across India.
+                            </p>
+                            <div style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '0.5rem',
+                                color: '#ec4899',
+                                fontWeight: 500,
+                                fontSize: '0.9rem',
+                            }}>
+                                Visit Website <ExternalLink size={16} />
+                            </div>
+                        </motion.a>
+
+                        <motion.a
+                            href="https://biofolk.info"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="card card-interactive"
+                            style={{ textDecoration: 'none', display: 'block' }}
+                            whileHover={{ scale: 1.02, y: -5 }}
+                            whileTap={{ scale: 0.98 }}
+                        >
+                            <div style={{
+                                width: '56px',
+                                height: '56px',
+                                borderRadius: 'var(--radius-md)',
+                                background: 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                marginBottom: '1rem',
+                            }}>
+                                <Cpu size={28} color="white" />
+                            </div>
+                            <h3 style={{
+                                fontSize: '1.15rem',
+                                marginBottom: '0.5rem',
+                                fontFamily: 'var(--font-sans)',
+                                fontWeight: 600,
+                            }}>
+                                BioFolk AI
+                            </h3>
+                            <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
+                                An innovative AI-powered platform bridging biotechnology and artificial intelligence for healthcare solutions.
+                            </p>
+                            <div style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '0.5rem',
+                                color: '#8b5cf6',
+                                fontWeight: 500,
+                                fontSize: '0.9rem',
+                            }}>
+                                Visit Website <ExternalLink size={16} />
+                            </div>
+                        </motion.a>
                     </div>
                 </motion.div>
 

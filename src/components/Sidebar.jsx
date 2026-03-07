@@ -225,14 +225,9 @@ const Sidebar = () => {
                     }}>
                         © {new Date().getFullYear()} Manoj Kumar Jana
                         <br />
-                        <a
-                            href="https://bhowlader.github.io"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: 'var(--color-accent)' }}
-                        >
-                            Developed by Bibek Howlader
-                        </a>
+                        <span style={{ color: 'var(--color-accent)' }}>
+                            Built by Mindrona
+                        </span>
                     </p>
                 </motion.div>
             </motion.aside>
